@@ -53,10 +53,10 @@ html {
   color: #5bacc3;
 }
 
-.nav--padding {
+.nav-padding {
   margin-bottom: 0.6rem;
 }
-.nav--padding li a {
+.nav-padding li a {
   padding: 1.25rem;
 }
 
