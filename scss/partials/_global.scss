@@ -1,0 +1,109 @@
+/* change default setting */
+body {
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 1.125rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* header used by both pages */
+// logo
+.logo {
+    width: 2.778rem;
+
+    &--modified {
+        margin-top: 1.25rem;
+    }
+}
+
+.nitro-word {
+    color: #393939;
+    /* font-size: 3.75rem; */
+    font-weight: 300;
+    text-decoration: none;
+    text-align: left;
+
+    a{
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #393939;
+    }
+}
+
+// nav bar
+.nav__options {
+    list-style-type: none;
+    font-size: 1.167rem;
+    /* 21px */
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+        a {
+            color: #393939;
+            text-decoration: none;
+        }
+    }
+
+    .nav__options--modified {
+        color: #5bacc3;
+    }
+}
+
+.nav--padding {
+    margin-bottom: 0.6rem;
+
+    li {
+        a {
+            padding: 1.25rem;
+        }
+    }
+}
+
+.header-modified {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.nav__header {
+    display: flex;
+    justify-content: center;
+}
+
+
+// background color
+@mixin background-style($color) {
+    background-color: $color;
+    width: 100%;
+    padding: 1.25rem;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background-style {
+    @include background-style(#fff0ed);
+
+    &--gray {
+        @include background-style(#f7f7f7);
+        text-align: center;
+    }
+}
+
+p {
+    font-size: 1rem;
+    /* 18px */
+    font-weight: 400;
+}

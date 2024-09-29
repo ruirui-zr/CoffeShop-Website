@@ -1,0 +1,151 @@
+@use './partials/color' as *;
+@use './partials/global' as *;
+
+/* ---------------- hero image ---------------- */
+.hero-img {
+    background-image: url("../Assets/images/coffee-circle.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 38.889rem;
+    /* 700px */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+/* navigation bar */
+
+/* given setting for the title box*/
+.title-box {
+    width: 18.75rem;
+    /* 300px */
+    height: 12.5rem; 
+    /* 200px */
+    background-color: #393939;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+}
+
+.title-box__border{
+    border: 0.3125rem solid #5bacc3;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -0.625rem;
+    left: -0.625rem; 
+}
+
+
+/* menu */
+h1.hero-img__text{
+    font-family: "Open Sans";
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+/* sub navigation bar */
+.nav-link{
+    width: 100%;
+    background-color:#393939;
+    list-style-type: none;
+    text-align: center;
+    height: 4.444rem;
+    /* 80px */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* remove underline */
+.nav-link li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.167rem;
+    /* 21px */
+    font-weight: 400;
+    padding: 0 1.111rem;
+    /* 20px */
+    display: inline-block;
+    position:relative;
+}
+
+/* border-like element */
+.nav-link li a::before {
+    content: '';
+    position: absolute;
+    left: 0; 
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 0.222rem; 
+    /* 4px */
+    height: 1.5rem; 
+    background-color: #5bacc3; 
+}
+
+/* Keep visited links white */
+.nav-link li a:visited {
+    color: white;
+}
+
+/* display the sub navbar options horizontally */
+.sub-nav__display{
+    display:inline-block;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section__title{
+    padding: 1.8rem;
+}
+
+/* main body style*/
+h1,
+h2{
+    font-size: 3.333rem;
+    /* 60px */
+    font-weight: 300;
+    text-align: center;
+}
+
+main h3{
+    font-size: 1.833rem;
+    /* 33px */
+    font-weight: 300;
+}
+
+main h3{
+    text-align: center;
+}
+
+p.description{
+    font-size: 1rem;
+    /* 18px */
+    font-weight: 400;
+    font-style: italic;
+}
+
+p.price{
+    font-size: 1rem;
+    /* 18px */
+    font-weight: 400;
+    color: #5bacc3;
+    text-align: center;
+    padding-top: 0.2rem;
+    padding-bottom: 2.5rem;
+}
+
+.one-third{
+    width: 33.33%;
+    /* center the text */
+    text-align: center; 
+    margin: 0 auto;
+}
